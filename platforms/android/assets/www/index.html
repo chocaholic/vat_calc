@@ -1,0 +1,62 @@
+<!doctype>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../www/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../www/lib/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../www/css/site.css" rel="stylesheet">
+    <title>
+        Vat Calculator
+    </title>
+</head>
+
+<body>
+    <div class="container body-content" style="margin-top: 20px;">
+        <div class="row">
+            <img src="../www/img/woden.png" class="pull-left" />
+            <img src="../www/img/bo.jpg" class="pull-right" />
+        </div>
+    <div class="container bottom20">
+        <div class="row">
+            <h3>Enter Price</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <form name="calculate" id="calculate">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+								
+                                    <input type="text" class="form-control input-lg text-center" id="price" name="price" placeholder="Price">
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+									<p class="text-center" style="font-size: 20px;" id="expected">Vat = <span style="font-weight: bold;" id="totvat"></span>
+									<br>Price + Vat = <span style="font-weight: bold;" id="finalprice"></span></p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block btn-lg" value="VatA" id="VatA">Vat A</button>
+						<button type="submit" class="btn btn-primary btn-block btn-lg" value="VatB" id="VatB">Vat B</button>
+						<button type="submit" class="btn btn-warning btn-block btn-lg" value="VatC" id="VatC">Vat C</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+            <footer>
+
+            </footer>
+    </div>
+    <script src="../www/lib/jquery/dist/jquery.min.js"></script>
+    <script src="../www/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../www/lib/plugins/jquery.form.min.js"></script>
+    <script src="../www/lib/plugins/jquery.validate.min.js"></script>
+    <script src="../www/lib/knockout/dist/knockout.js"></script>
+    <script src="../www/lib/toastr/toastr.min.js"></script>
+    <script src="../www/js/main.js"></script>
+</body>
+
+</html>
